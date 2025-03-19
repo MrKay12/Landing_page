@@ -81,7 +81,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
           <p>© {new Date().getFullYear()} Relax So Good. Tous droits réservés.</p>
           <p className="mt-2 text-sm">
-            L'abus d'alcool est dangereux pour la santé, à consommer avec modération. La vente de CBD est interdite aux
+            L&apos;abus d&apos;alcool est dangereux pour la santé, à consommer avec modération. La vente de CBD est interdite aux
             mineurs.
           </p>
         </div>

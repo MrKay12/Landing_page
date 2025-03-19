@@ -7,7 +7,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import { ShoppingCart, Heart, Gift, ArrowRight } from "lucide-react"
+import { ShoppingCart, Heart, ArrowRight } from "lucide-react"
 import Image from "next/image"
 
 // Sample product data

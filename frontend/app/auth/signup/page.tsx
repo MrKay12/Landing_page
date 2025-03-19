@@ -87,9 +87,8 @@ export default function SignupPage() {
       // Register the user
       const data = await registerUser(formData);
       console.log("User registered successfully:", data);
-      // Redirect to another page or show success message
       router.push("/success");
-    } catch (error) {
+    } catch {
       alert("Failed to register user. Please try again.");
     }
   };
@@ -189,7 +188,7 @@ export default function SignupPage() {
                     required
                   />
                   <Label htmlFor="acceptTerms" className="text-sm">
-                    J'accepte les{" "}
+                    J&apos;accepte les{" "}
                     <Link href="/terms" className="text-blue-600 hover:underline">
                       conditions générales
                     </Link>{" "}

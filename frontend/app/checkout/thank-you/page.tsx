@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { useRouter } from "next/navigation"
 import Header from "@/components/header"
 import AgeVerification from "@/components/age-verification"
 import { Button } from "@/components/ui/button"
@@ -10,7 +9,6 @@ import { CheckCircle, ShoppingBag, ArrowRight } from "lucide-react"
 import Footer from "@/components/footer"
 
 export default function ThankYouPage() {
-  const router = useRouter()
   const [verified, setVerified] = useState<boolean>(false)
   const [loading, setLoading] = useState<boolean>(true)
   const [orderNumber, setOrderNumber] = useState<string>("")
@@ -58,13 +56,13 @@ export default function ThankYouPage() {
             <h1 className="text-3xl font-bold mb-4">Merci pour votre commande !</h1>
             <p className="text-xl mb-2">Votre commande a été confirmée.</p>
             <p className="text-gray-500 mb-8">
-              Vous recevrez un email de confirmation à l'adresse email que vous avez fournie.
+              Vous recevrez un email de confirmation à l&apos;adresse email que vous avez fournie.
             </p>
             
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <h2 className="text-lg font-semibold mb-2">Numéro de commande: {orderNumber}</h2>
               <p className="text-gray-500">
-                Vous pouvez suivre l'état de votre commande dans votre compte.
+                Vous pouvez suivre l&apos;état de votre commande dans votre compte.
               </p>
             </div>
             

@@ -70,11 +70,11 @@ export default function ForgotPasswordPage() {
             <div className="bg-green-50 border border-green-200 rounded-md p-6 text-center">
               <h2 className="text-xl font-semibold text-green-700 mb-2">Email envoyé !</h2>
               <p className="text-green-600 mb-4">
-                Si un compte existe avec l'adresse {email}, vous recevrez un email avec les instructions pour
+                Si un compte existe avec l&apos;adresse {email}, vous recevrez un email avec les instructions pour
                 réinitialiser votre mot de passe.
               </p>
               <p className="text-sm text-gray-500">
-                N'oubliez pas de vérifier votre dossier de spam si vous ne trouvez pas l'email.
+                N&apos;oubliez pas de vérifier votre dossier de spam si vous ne trouvez pas l&apos;email.
               </p>
             </div>
           ) : (

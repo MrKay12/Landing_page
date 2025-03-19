@@ -51,14 +51,13 @@ const product = {
   ],
 }
 
-export default function ProductPage({ params }: { params: { id: string } }) {
-  const [verified, setVerified] = useState<boolean>(false)
-  const [loading, setLoading] = useState<boolean>(true)
+export default function ProductPage() {  const [loading, setLoading] = useState<boolean>(true)
   const [quantity, setQuantity] = useState(1)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [isFavorite, setIsFavorite] = useState(false)
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [reviews, setReviews] = useState(product.reviews)
+  const [verified, setVerified] = useState(false) // Add this state variable
 
   useEffect(() => {
     // Check if user has previously verified their age
@@ -268,7 +267,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                   <h3 className="font-semibold mb-2">Informations légales</h3>
                   <p className="text-sm text-gray-600">
                     Nos produits contiennent moins de 0,2% de THC conformément à la législation européenne. Ils sont
-                    destinés aux personnes majeures et ne sont pas recommandés pendant la grossesse ou l'allaitement.
+                    destinés aux personnes majeures et ne sont pas recommandés pendant la grossesse ou l&apos;allaitement.
                     Ces produits ne sont pas des médicaments et ne peuvent se substituer à un traitement médical.
                   </p>
                 </div>
@@ -346,7 +345,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                 <div>
                   <h3 className="font-semibold mb-2">Informations importantes</h3>
                   <p className="text-sm text-gray-600">
-                    Livraison gratuite à partir de 50€ d'achat. Les commandes passées avant 14h sont expédiées le jour
+                    Livraison gratuite à partir de 50€ d&apos;achat. Les commandes passées avant 14h sont expédiées le jour
                     même (hors week-end et jours fériés). Nous livrons uniquement en France métropolitaine et en Europe.
                   </p>
                 </div>

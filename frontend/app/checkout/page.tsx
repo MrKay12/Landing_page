@@ -381,7 +381,7 @@ export default function CheckoutPage() {
                           </div>
                           <div className="grid grid-cols-2 gap-4">
                             <div className="space-y-2">
-                              <Label htmlFor="cardExpiry">Date d'expiration</Label>
+                              <Label htmlFor="cardExpiry">Date d&apos;expiration</Label>
                               <Input
                                 id="cardExpiry"
                                 name="cardExpiry"
@@ -445,7 +445,7 @@ export default function CheckoutPage() {
                         required
                       />
                       <Label htmlFor="acceptTerms" className="text-sm">
-                        J'accepte les{" "}
+                        J&apos;accepte les{" "}
                         <Link href="/terms" className="text-blue-600 hover:underline">
                           conditions générales de vente
                         </Link>{" "}

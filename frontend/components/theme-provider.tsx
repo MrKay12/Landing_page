@@ -16,7 +16,6 @@ interface ThemeProviderProps {
 
 export function ThemeProvider({
   children,
-  attribute,
   defaultTheme,
   enableSystem,
   disableTransitionOnChange,
